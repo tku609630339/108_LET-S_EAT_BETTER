@@ -1,0 +1,116 @@
+<html>
+<head>
+<style type="text/css">
+
+input.mediumseagreen
+{
+   font-size:8px;
+   font-family:Courier New,monospace;
+   font-weight:bold;
+   color:#330000;
+   width:90px;
+   height:25px;
+   background-color:mediumseagreen;
+   border-style:solid;
+   border-color:#330000;
+   border-width:1px;
+}
+
+</style>
+
+
+<style type="text/css">
+
+input.back
+{
+   font-size:10px;
+   font-family:Courier New,monospace;
+   font-weight:bold;
+   color:#FF3300;
+   width:100px;
+   height:35px;
+   background-color:#FFFFCC;
+   border-style:solid;
+   border-color:#330000;
+   border-width:1px;
+  
+}
+
+</style>
+
+<script language="javascript">
+
+function goLite(FRM,BTN)
+{
+   window.document.forms[FRM].elements[BTN].style.color = "#330000";
+   window.document.forms[FRM].elements[BTN].style.backgroundColor = "#FF0000";
+}
+
+function goDim(FRM,BTN)
+{
+   window.document.forms[FRM].elements[BTN].style.color = "#330000";
+   window.document.forms[FRM].elements[BTN].style.backgroundColor = "#33FF99";
+}
+
+</script>
+</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<center><h1><font face="DFKai-SB">青少年推薦類別</font><br></h1></center>
+
+</head>
+
+<body bgcolor="#F0FFF0" >
+<table  style="border:2px black double;padding:5px;" rules="all" align="center" cellpadding='6';>
+<form name="mediumseagreen">
+<thead>
+ 
+<tr><th colspan="4"><font  size="6" face="cursive" color="mediumseagreen">推薦類別</font></th></tr>
+</thead>
+<tbody>
+
+<td><img src="../畢專新圖/健康.jpg"  width="90px" height="100px"></td>
+<td><img src="../畢專新圖/增肌.jpg"  width="90px" height="100px"></td>
+<td><img src="../畢專新圖/減肥.jpg"  width="90px" height="100px"></td>
+
+
+</tbody>
+
+<tbody>
+<td>
+<input type ="button" onclick="javascript:location.href='../推薦飲食/青少年健康飲食.html'" value="青少年健康飲食"
+name="mediumseagreen1" class="mediumseagreen"
+onMouseOver="goLite(this.form.name,this.name)"
+onMouseOut="goDim(this.form.name,this.name)"></input>
+</td>
+<td>
+<input type ="button" onclick="javascript:location.href='../推薦飲食/青少年增肌.html'" value="青少年增肌飲食"
+name="mediumseagreen2" class="mediumseagreen"
+onMouseOver="goLite(this.form.name,this.name)"
+onMouseOut="goDim(this.form.name,this.name)"></input>
+</td>
+<td>
+<input type ="button" onclick="javascript:location.href='../推薦飲食/青少年減肥飲食.html'" value="青少年減肥飲食"
+name="mediumseagreen3" class="mediumseagreen"
+onMouseOver="goLite(this.form.name,this.name)"
+onMouseOut="goDim(this.form.name,this.name)"></input>
+</td>
+</tbody>
+</table>
+<table>
+<td>
+<br>
+
+<input type ="button"  onclick="javascript:location.href='../推薦飲食/推薦對象.html'" value="上一頁"
+name="mediumseagreen6" class="back"></input>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="button"  onclick="javascript:location.href='../推薦飲食/推薦對象.html'" value="主頁"
+name="mediumseagreen7" class="back"></input>
+</td>
+</table>
+
+<br><br>
+
+
+<font size="1.5px"><a href="https://www.hpa.gov.tw/Pages/List.aspx?nodeid=36" target="_blank" title="青少年飲食資料來源">青少年飲食資料來源</a></font>
+</html>

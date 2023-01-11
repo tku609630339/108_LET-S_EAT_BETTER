@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+
+input.mediumseagreen
+{
+   font-size:8px;
+   font-family:Courier New,monospace;
+   font-weight:bold;
+   color:#330000;
+   width:125px;
+   height:35px;
+   background-color:mediumseagreen;
+   border-style:solid;
+   border-color:#330000;
+   border-width:1px;
+}
+
+</style>
+
+<style type="text/css">
+
+input.back
+{
+   font-size:10px;
+   font-family:Courier New,monospace;
+   font-weight:bold;
+   color:#FF3300;
+   width:100px;
+   height:35px;
+   background-color:#FFFFCC;
+   border-style:solid;
+   border-color:#330000;
+   border-width:1px;
+  
+}
+
+</style>
+
+
+<script language="javascript">
+
+function goLite(FRM,BTN)
+{
+   window.document.forms[FRM].elements[BTN].style.color = "#330000";
+   window.document.forms[FRM].elements[BTN].style.backgroundColor = "#FF0000";
+}
+
+function goDim(FRM,BTN)
+{
+   window.document.forms[FRM].elements[BTN].style.color = "#330000";
+   window.document.forms[FRM].elements[BTN].style.backgroundColor = "#33FF99";
+}
+
+</script>
+</head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width" />
+   <title>孕婦飲食推薦</title>
+
+
+<body bgcolor="#F0FFF0" >
+<table  style="border:3px black double;padding:5px;" rules="all" align="center" cellpadding='18';>
+<form name="mediumseagreen">
+ <thead>
+ 
+  <tr><th colspan="4"><font  size="6" face="cursive" color="mediumseagreen">孕婦飲食注意</font></th></tr>
+  
+   
+  </thead>
+  <tbody>
+    <ul type="disc">
+	<tr><td><li>避免油膩與刺激性的食物</li></td></tr>
+	<tr><td><li>避免生食及過度加工的食物</li></td></tr>
+	<tr><td><li>避免飲酒及吃含酒精食物</li></td></tr>
+	<tr><td><li>不吃高熱量的飲食</li></td></tr>
+    <tr><td><li>吃少量的點心、不額外吃宵夜</li></td></tr></ul>
+  </tbody>
+<tbody>
+<td>
+<input type ="button" onclick="javascript:location.href='../推薦飲食/孕婦飲食_1.html'" value="孕婦食物飲食"
+name="mediumseagreen1" class="mediumseagreen"
+onMouseOver="goLite(this.form.name,this.name)"
+onMouseOut="goDim(this.form.name,this.name)"></input>
+
+<input type ="button"  onclick="javascript:location.href='../推薦飲食/孕婦飲食_2.html'" value="孕婦一天食物推薦"
+name="mediumseagreen2" class="mediumseagreen"
+onMouseOver="goLite(this.form.name,this.name)"
+onMouseOut="goDim(this.form.name,this.name)"></input>
+</td>
+</tbody>
+
+</table>
+<table>
+<td>
+<br>
+
+<input type ="button"  onclick="javascript:location.href='../推薦飲食/推薦對象.html'" value="上一頁"
+name="mediumseagreen3" class="back"></input>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type ="button"  onclick="javascript:location.href='../推薦飲食/推薦對象.html'" value="主頁"
+name="mediumseagreen3" class="back"></input>
+</td>
+</table>
+<br>
+
+<font size="1.5px"><a href="https://www.fhs.gov.hk/tc_chi/health_info/woman/20036.html" target="_blank" title="幼年健康飲食資料來源">孕婦飲食資料來源</a></font>
+</body>
+</html>
+
+	

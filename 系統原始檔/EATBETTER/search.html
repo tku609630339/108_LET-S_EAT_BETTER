@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食品即時搜尋系統</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    搜尋：<input type="text" name="search_text" id="search_text" placeholder="請輸入搜尋文字" class="form-control" /> （編號、名稱、分類都可搜尋）
+    <div id="search_result"></div>
+    
+
+    <script>
+        $(document).ready(function () {
+
+            load_data();
+
+            function load_data(query) {
+                $.ajax({
+                    url: "search.php",
+                    method: "GET",
+                    data: {
+                        s: query
+                    },
+                    success: function (data) {
+                        $('#search_result').html(data);
+                    }
+                });
+            }
+            $('#search_text').keyup(function () {
+                var search = $(this).val();
+                if (search != '') {
+                    load_data(search);
+                } else {
+                    load_data();
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

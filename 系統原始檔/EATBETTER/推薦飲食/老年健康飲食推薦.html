@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<style type="text/css">
+
+input.mediumseagreen
+{
+   font-size:7px;
+   font-family:Courier New,monospace;
+   font-weight:bold;
+   color:#330000;
+   width:125px;
+   height:35px;
+   background-color:mediumseagreen;
+   border-style:solid;
+   border-color:#330000;
+   border-width:1px;
+}
+
+</style>
+
+<style type="text/css">
+
+input.back
+{
+   font-size:10px;
+   font-family:Courier New,monospace;
+   font-weight:bold;
+   color:#FF3300;
+   width:100px;
+   height:35px;
+   background-color:#FFFFCC;
+   border-style:solid;
+   border-color:#330000;
+   border-width:1px;
+  
+}
+
+</style>
+
+<script language="javascript">
+
+function goLite(FRM,BTN)
+{
+   window.document.forms[FRM].elements[BTN].style.color = "#330000";
+   window.document.forms[FRM].elements[BTN].style.backgroundColor = "#FF0000";
+}
+
+function goDim(FRM,BTN)
+{
+   window.document.forms[FRM].elements[BTN].style.color = "#330000";
+   window.document.forms[FRM].elements[BTN].style.backgroundColor = "#33FF99";
+}
+
+</script>
+
+<meta charset="utf-8">
+ <title><center><h1><font face="DFKai-SB">老年健康飲食推薦</font><br></h1></center></title>
+ </head>
+<body bgcolor="#F0FFF0" >
+<table  style="border:3px black double;padding:10px;" rules="all" align="center" cellpadding='15';>
+<form name="mediumseagreen">
+  <thead>
+   <tr><th colspan="4"><font  size="6" face="cursive" color="mediumseagreen">老年健康飲食注意</font></th></tr>
+  </thead>
+   
+
+
+
+  <tbody>
+   <ul type="disc">
+     <tr><td><li>少量多餐，以點心補充營養</li></td></tr>
+	 <tr><td><li>以豆製品取代部份動物蛋白質</li></td></tr>
+	 <tr><td><li>主食加入蔬菜一起烹調</li></td></tr>
+	 <tr><td><li>每天吃2份水果</li></td></tr>
+     <tr><td><li>限制油脂攝取量</li></td></tr>
+     <tr><td><li>少加鹽、味精、醬油，善用其他調味方法</li></td></tr></ul>
+  </tbody>
+<tbody>
+<td>
+<input type ="button"  onclick="javascript:location.href='../推薦飲食/老年健康飲食_1.html'" value="老年健康飲食推薦"
+name="mediumseagreen1" class="mediumseagreen"
+onMouseOver="goLite(this.form.name,this.name)"
+onMouseOut="goDim(this.form.name,this.name)"></input>
+<input type ="button"   onclick="javascript:location.href='../推薦飲食/老年健康飲食_2.html'" value="老年健康一天飲食推薦"
+name="mediumseagreen2" class="mediumseagreen"
+onMouseOver="goLite(this.form.name,this.name)"
+onMouseOut="goDim(this.form.name,this.name)"></input>
+</td>
+</tbody>
+</table>
+<table>
+<td>
+<br>
+
+
+<input type ="button"  onclick="javascript:location.href='../推薦飲食/推薦對象.html'" value="上一頁"
+name="mediumseagreen6" class="back"></input>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+<input type ="button"  onclick="javascript:location.href='../推薦飲食/推薦對象.html'" value="主頁"
+name="mediumseagreen7" class="back"></input>
+</td>
+</table>
+
+
+<br><br>
+
+
+<font size="1.5px"><a href="https://health99.hpa.gov.tw/media/public/pdf/21553.pdf" target="_blank" title="老年飲食資料來源">老年飲食資料來源</a></font>
+   </body>
+ </html>
+	
